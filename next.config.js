@@ -7,4 +7,14 @@ module.exports = withBundleAnalyzer({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'looparadise.ru',
+        port: '',
+        pathname: '/static/**',
+      },
+    ],
+  },
 });

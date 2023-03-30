@@ -1,5 +1,8 @@
-import { Paper, Box, Text } from '@mantine/core';
+import { Text, Box, Paper } from '@mantine/core';
+import { FeaturesData } from './FeaturesData';
 import { useStyles } from './AboutUs.styles';
+import { FeaturesGrid } from './FeaturesGrid';
+import { TownInfo } from './TownInfo';
 
 export const AboutUs = () => {
   const { classes } = useStyles();
@@ -15,6 +18,12 @@ export const AboutUs = () => {
         >
           О нас
         </Text>
+        <FeaturesGrid
+          title="Привилегии отеля"
+          description="Каждый номер с удобствами"
+          data={FeaturesData}
+        />
+        <TownInfo />
       </Box>
     </Paper>
   );

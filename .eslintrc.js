@@ -17,5 +17,8 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/quotes': 'off',
+    'arrow-body-style': 'off',
+    'linebreak-style': ['error', 'windows'],
   },
 };
